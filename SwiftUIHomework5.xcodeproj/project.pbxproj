@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D3B00FE285F0D9600F8572A /* SwiftUIHomework5App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3B00D6285F0D9300F8572A /* SwiftUIHomework5App.swift */; };
+		4D3B0100285F0D9600F8572A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3B00D7285F0D9300F8572A /* ContentView.swift */; };
+		4D3B0102285F0D9600F8572A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D3B00D8285F0D9600F8572A /* Assets.xcassets */; };
+		4D3B0113285F11BD00F8572A /* SuffixScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3B0112285F11BD00F8572A /* SuffixScreenView.swift */; };
+		4D3B0116285F138900F8572A /* SuffixViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3B0115285F138900F8572A /* SuffixViewModel.swift */; };
+		4D3B0119285F13EF00F8572A /* SuffixModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3B0118285F13EE00F8572A /* SuffixModel.swift */; };
+		4D3B011C285F194F00F8572A /* SuffixSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3B011B285F194F00F8572A /* SuffixSequence.swift */; };
+		4D3B011F285F195C00F8572A /* SuffixIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3B011E285F195C00F8572A /* SuffixIterator.swift */; };
+		4D3B0122285F543000F8572A /* Text+AttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3B0121285F543000F8572A /* Text+AttributedString.swift */; };
+		4D3B0125285F5B3000F8572A /* TextScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3B0124285F5B3000F8572A /* TextScreenView.swift */; };
+		4D6B7E05286B0F8200B3AE61 /* SuffixModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3B0118285F13EE00F8572A /* SuffixModel.swift */; };
+		4D6B7E06286B0F8600B3AE61 /* SuffixIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3B011E285F195C00F8572A /* SuffixIterator.swift */; };
+		4D6B7E07286B0F8900B3AE61 /* SuffixSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3B011B285F194F00F8572A /* SuffixSequence.swift */; };
+		4D6EB619286B45F0006729B0 /* WidgetBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6EB618286B45F0006729B0 /* WidgetBridge.swift */; };
+		4D6EB61A286B45F0006729B0 /* WidgetBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6EB618286B45F0006729B0 /* WidgetBridge.swift */; };
+		4D7A7664286A39DD001AFAA7 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D7A7663286A39DD001AFAA7 /* WidgetKit.framework */; };
+		4D7A7666286A39DD001AFAA7 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D7A7665286A39DD001AFAA7 /* SwiftUI.framework */; };
+		4D7A7669286A39DD001AFAA7 /* HomeworkWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7A7668286A39DD001AFAA7 /* HomeworkWidget.swift */; };
+		4D7A766C286A39DE001AFAA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D7A766B286A39DE001AFAA7 /* Assets.xcassets */; };
+		4D7A766E286A39DE001AFAA7 /* HomeworkWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 4D7A766A286A39DD001AFAA7 /* HomeworkWidget.intentdefinition */; };
+		4D7A766F286A39DE001AFAA7 /* HomeworkWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 4D7A766A286A39DD001AFAA7 /* HomeworkWidget.intentdefinition */; };
+		4D7A7672286A39DE001AFAA7 /* HomeworkWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4D7A7661286A39DD001AFAA7 /* HomeworkWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4D7A7678286B0C99001AFAA7 /* WidgetEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7A7677286B0C99001AFAA7 /* WidgetEntry.swift */; };
+		4D7A767A286B0CE6001AFAA7 /* WidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7A7679286B0CE6001AFAA7 /* WidgetEntryView.swift */; };
+		4D869112286B600F004BC146 /* WidgetLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D869111286B600F004BC146 /* WidgetLink.swift */; };
+		4D869113286B600F004BC146 /* WidgetLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D869111286B600F004BC146 /* WidgetLink.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4D7A7670286A39DE001AFAA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D3B00D1285F0D9300F8572A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D7A7660286A39DD001AFAA7;
+			remoteInfo = HomeworkWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4D7A7673286A39DE001AFAA7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4D7A7672286A39DE001AFAA7 /* HomeworkWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4D3B00D6285F0D9300F8572A /* SwiftUIHomework5App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIHomework5App.swift; sourceTree = "<group>"; };
+		4D3B00D7285F0D9300F8572A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4D3B00D8285F0D9600F8572A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4D3B00DD285F0D9600F8572A /* SwiftUIHomework5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIHomework5.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D3B0112285F11BD00F8572A /* SuffixScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixScreenView.swift; sourceTree = "<group>"; };
+		4D3B0115285F138900F8572A /* SuffixViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixViewModel.swift; sourceTree = "<group>"; };
+		4D3B0118285F13EE00F8572A /* SuffixModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixModel.swift; sourceTree = "<group>"; };
+		4D3B011B285F194F00F8572A /* SuffixSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixSequence.swift; sourceTree = "<group>"; };
+		4D3B011E285F195C00F8572A /* SuffixIterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixIterator.swift; sourceTree = "<group>"; };
+		4D3B0121285F543000F8572A /* Text+AttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text+AttributedString.swift"; sourceTree = "<group>"; };
+		4D3B0124285F5B3000F8572A /* TextScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextScreenView.swift; sourceTree = "<group>"; };
+		4D6EB618286B45F0006729B0 /* WidgetBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetBridge.swift; sourceTree = "<group>"; };
+		4D7A7661286A39DD001AFAA7 /* HomeworkWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HomeworkWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D7A7663286A39DD001AFAA7 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		4D7A7665286A39DD001AFAA7 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		4D7A7668286A39DD001AFAA7 /* HomeworkWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworkWidget.swift; sourceTree = "<group>"; };
+		4D7A766A286A39DD001AFAA7 /* HomeworkWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = HomeworkWidget.intentdefinition; sourceTree = "<group>"; };
+		4D7A766B286A39DE001AFAA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4D7A766D286A39DE001AFAA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D7A7677286B0C99001AFAA7 /* WidgetEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetEntry.swift; sourceTree = "<group>"; };
+		4D7A7679286B0CE6001AFAA7 /* WidgetEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetEntryView.swift; sourceTree = "<group>"; };
+		4D86910F286B55E3004BC146 /* HomeworkWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HomeworkWidgetExtension.entitlements; sourceTree = "<group>"; };
+		4D869110286B5608004BC146 /* SwiftUIHomework5 (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SwiftUIHomework5 (iOS).entitlements"; sourceTree = "<group>"; };
+		4D869111286B600F004BC146 /* WidgetLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetLink.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D3B00DA285F0D9600F8572A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D7A765E286A39DD001AFAA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D7A7666286A39DD001AFAA7 /* SwiftUI.framework in Frameworks */,
+				4D7A7664286A39DD001AFAA7 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D3B00D0285F0D9300F8572A = {
+			isa = PBXGroup;
+			children = (
+				4D869110286B5608004BC146 /* SwiftUIHomework5 (iOS).entitlements */,
+				4D86910F286B55E3004BC146 /* HomeworkWidgetExtension.entitlements */,
+				4D3B00D5285F0D9300F8572A /* Shared */,
+				4D7A7667286A39DD001AFAA7 /* HomeworkWidget */,
+				4D7A7662286A39DD001AFAA7 /* Frameworks */,
+				4D3B00DE285F0D9600F8572A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4D3B00D5285F0D9300F8572A /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				4DF352A3286A23690066FB42 /* Screens */,
+				4DF352A2286A235D0066FB42 /* Extensions */,
+				4D3B00D6285F0D9300F8572A /* SwiftUIHomework5App.swift */,
+				4D3B00D7285F0D9300F8572A /* ContentView.swift */,
+				4D3B00D8285F0D9600F8572A /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		4D3B00DE285F0D9600F8572A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4D3B00DD285F0D9600F8572A /* SwiftUIHomework5.app */,
+				4D7A7661286A39DD001AFAA7 /* HomeworkWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4D7A7662286A39DD001AFAA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D7A7663286A39DD001AFAA7 /* WidgetKit.framework */,
+				4D7A7665286A39DD001AFAA7 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4D7A7667286A39DD001AFAA7 /* HomeworkWidget */ = {
+			isa = PBXGroup;
+			children = (
+				4D7A7668286A39DD001AFAA7 /* HomeworkWidget.swift */,
+				4D7A7677286B0C99001AFAA7 /* WidgetEntry.swift */,
+				4D7A7679286B0CE6001AFAA7 /* WidgetEntryView.swift */,
+				4D6EB618286B45F0006729B0 /* WidgetBridge.swift */,
+				4D869111286B600F004BC146 /* WidgetLink.swift */,
+				4D7A766A286A39DD001AFAA7 /* HomeworkWidget.intentdefinition */,
+				4D7A766B286A39DE001AFAA7 /* Assets.xcassets */,
+				4D7A766D286A39DE001AFAA7 /* Info.plist */,
+			);
+			path = HomeworkWidget;
+			sourceTree = "<group>";
+		};
+		4DF352A0286A231E0066FB42 /* SuffixScreen */ = {
+			isa = PBXGroup;
+			children = (
+				4D3B0112285F11BD00F8572A /* SuffixScreenView.swift */,
+				4D3B0115285F138900F8572A /* SuffixViewModel.swift */,
+				4D3B0118285F13EE00F8572A /* SuffixModel.swift */,
+				4D3B011E285F195C00F8572A /* SuffixIterator.swift */,
+				4D3B011B285F194F00F8572A /* SuffixSequence.swift */,
+			);
+			path = SuffixScreen;
+			sourceTree = "<group>";
+		};
+		4DF352A1286A232C0066FB42 /* TextScreen */ = {
+			isa = PBXGroup;
+			children = (
+				4D3B0124285F5B3000F8572A /* TextScreenView.swift */,
+			);
+			path = TextScreen;
+			sourceTree = "<group>";
+		};
+		4DF352A2286A235D0066FB42 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4D3B0121285F543000F8572A /* Text+AttributedString.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4DF352A3286A23690066FB42 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				4DF352A1286A232C0066FB42 /* TextScreen */,
+				4DF352A0286A231E0066FB42 /* SuffixScreen */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4D3B00DC285F0D9600F8572A /* SwiftUIHomework5 (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D3B0106285F0D9600F8572A /* Build configuration list for PBXNativeTarget "SwiftUIHomework5 (iOS)" */;
+			buildPhases = (
+				4D3B00D9285F0D9600F8572A /* Sources */,
+				4D3B00DA285F0D9600F8572A /* Frameworks */,
+				4D3B00DB285F0D9600F8572A /* Resources */,
+				4D7A7673286A39DE001AFAA7 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D7A7671286A39DE001AFAA7 /* PBXTargetDependency */,
+			);
+			name = "SwiftUIHomework5 (iOS)";
+			productName = "SwiftUIHomework5 (iOS)";
+			productReference = 4D3B00DD285F0D9600F8572A /* SwiftUIHomework5.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4D7A7660286A39DD001AFAA7 /* HomeworkWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D7A7676286A39DE001AFAA7 /* Build configuration list for PBXNativeTarget "HomeworkWidgetExtension" */;
+			buildPhases = (
+				4D7A765D286A39DD001AFAA7 /* Sources */,
+				4D7A765E286A39DD001AFAA7 /* Frameworks */,
+				4D7A765F286A39DD001AFAA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HomeworkWidgetExtension;
+			productName = HomeworkWidgetExtension;
+			productReference = 4D7A7661286A39DD001AFAA7 /* HomeworkWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4D3B00D1285F0D9300F8572A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					4D3B00DC285F0D9600F8572A = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					4D7A7660286A39DD001AFAA7 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 4D3B00D4285F0D9300F8572A /* Build configuration list for PBXProject "SwiftUIHomework5" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4D3B00D0285F0D9300F8572A;
+			productRefGroup = 4D3B00DE285F0D9600F8572A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4D3B00DC285F0D9600F8572A /* SwiftUIHomework5 (iOS) */,
+				4D7A7660286A39DD001AFAA7 /* HomeworkWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4D3B00DB285F0D9600F8572A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D3B0102285F0D9600F8572A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D7A765F286A39DD001AFAA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D7A766C286A39DE001AFAA7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D3B00D9285F0D9600F8572A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D3B011F285F195C00F8572A /* SuffixIterator.swift in Sources */,
+				4D869112286B600F004BC146 /* WidgetLink.swift in Sources */,
+				4D3B0100285F0D9600F8572A /* ContentView.swift in Sources */,
+				4D3B011C285F194F00F8572A /* SuffixSequence.swift in Sources */,
+				4D3B0116285F138900F8572A /* SuffixViewModel.swift in Sources */,
+				4D6EB619286B45F0006729B0 /* WidgetBridge.swift in Sources */,
+				4D3B0113285F11BD00F8572A /* SuffixScreenView.swift in Sources */,
+				4D3B0122285F543000F8572A /* Text+AttributedString.swift in Sources */,
+				4D3B00FE285F0D9600F8572A /* SwiftUIHomework5App.swift in Sources */,
+				4D3B0125285F5B3000F8572A /* TextScreenView.swift in Sources */,
+				4D7A766F286A39DE001AFAA7 /* HomeworkWidget.intentdefinition in Sources */,
+				4D3B0119285F13EF00F8572A /* SuffixModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D7A765D286A39DD001AFAA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D7A766E286A39DE001AFAA7 /* HomeworkWidget.intentdefinition in Sources */,
+				4D869113286B600F004BC146 /* WidgetLink.swift in Sources */,
+				4D6B7E07286B0F8900B3AE61 /* SuffixSequence.swift in Sources */,
+				4D7A767A286B0CE6001AFAA7 /* WidgetEntryView.swift in Sources */,
+				4D7A7678286B0C99001AFAA7 /* WidgetEntry.swift in Sources */,
+				4D7A7669286A39DD001AFAA7 /* HomeworkWidget.swift in Sources */,
+				4D6B7E06286B0F8600B3AE61 /* SuffixIterator.swift in Sources */,
+				4D6EB61A286B45F0006729B0 /* WidgetBridge.swift in Sources */,
+				4D6B7E05286B0F8200B3AE61 /* SuffixModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4D7A7671286A39DE001AFAA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D7A7660286A39DD001AFAA7 /* HomeworkWidgetExtension */;
+			targetProxy = 4D7A7670286A39DE001AFAA7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4D3B0104285F0D9600F8572A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4D3B0105285F0D9600F8572A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		4D3B0107285F0D9600F8572A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SwiftUIHomework5 (iOS).entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DYN649U424;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mk.swiftuihomework5;
+				PRODUCT_NAME = SwiftUIHomework5;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4D3B0108285F0D9600F8572A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SwiftUIHomework5 (iOS).entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DYN649U424;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mk.swiftuihomework5;
+				PRODUCT_NAME = SwiftUIHomework5;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4D7A7674286A39DE001AFAA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = HomeworkWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DYN649U424;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HomeworkWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = HomeworkWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mk.swiftuihomework5.HomeworkWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4D7A7675286A39DE001AFAA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = HomeworkWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DYN649U424;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HomeworkWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = HomeworkWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mk.swiftuihomework5.HomeworkWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4D3B00D4285F0D9300F8572A /* Build configuration list for PBXProject "SwiftUIHomework5" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D3B0104285F0D9600F8572A /* Debug */,
+				4D3B0105285F0D9600F8572A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D3B0106285F0D9600F8572A /* Build configuration list for PBXNativeTarget "SwiftUIHomework5 (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D3B0107285F0D9600F8572A /* Debug */,
+				4D3B0108285F0D9600F8572A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D7A7676286A39DE001AFAA7 /* Build configuration list for PBXNativeTarget "HomeworkWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D7A7674286A39DE001AFAA7 /* Debug */,
+				4D7A7675286A39DE001AFAA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4D3B00D1285F0D9300F8572A /* Project object */;
+}
