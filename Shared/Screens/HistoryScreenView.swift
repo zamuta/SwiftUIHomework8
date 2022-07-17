@@ -13,6 +13,7 @@ struct HistoryScreenView: View {
     var body: some View {
         List {
             ForEach(viewModel.history, id: \.text) { item in
+                let backgroundColor = viewModel.colorForItem(item)
                 VStack(spacing: 8) {
                     Text(item.text)
                         .frame(maxWidth: .infinity, alignment: .leading)
@@ -25,6 +26,7 @@ struct HistoryScreenView: View {
                         .foregroundColor(.secondary)
                         .lineLimit(1)
                 }
+                .background(backgroundColor)
             }
         }
         .listStyle(.plain)

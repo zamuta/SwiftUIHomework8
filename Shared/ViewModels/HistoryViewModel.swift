@@ -57,4 +57,19 @@ class HistoryViewModel: ObservableObject {
         }
         scheduler.executeAll()
     }
+    
+    func colorForItem(_ item: HistoryModel) -> Color {
+        if history.count < 2 || isTesting {
+            return .white
+        }
+        let max = history.max { $0.lastMeasureTime ?? 0 < $1.lastMeasureTime ?? 0 }
+        let min = history.min { $0.lastMeasureTime ?? 0 < $1.lastMeasureTime ?? 0 }
+        if item == max && item.lastMeasureTime != nil {
+            return .green
+        }
+        else if item == min && item.lastMeasureTime != nil {
+            return .red
+        }
+        return .white
+    }
 }
