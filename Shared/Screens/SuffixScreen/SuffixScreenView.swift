@@ -60,7 +60,6 @@ struct SuffixScreenView: View {
         .autocapitalization(.none)
         .onAppear {
             viewModel.handle(text: text)
-            WidgetBridge.shared.top10Array = viewModel.top10Array.map(){ $0.suffix }
         }
     }
 }

@@ -14,14 +14,6 @@ struct ContentView: View {
         NavigationView {
             TextScreenView(isSuffixScreenActive: $isSuffixScreenActive)
         }
-        .onOpenURL { url in
-            if url == WidgetLink.main {
-                isSuffixScreenActive = false
-            }
-            else if url == WidgetLink.suffixes {
-                isSuffixScreenActive = true
-            }
-        }
     }
 }
 
