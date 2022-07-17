@@ -12,7 +12,7 @@ enum SuffixMenu: String, CaseIterable {
     case top10 = "TOP10"
 }
 
-struct SuffixScreenView: View {
+struct SuffixScreenView: View {    
     let text: String
     
     @StateObject private var viewModel = SuffixViewModel()
@@ -33,8 +33,8 @@ struct SuffixScreenView: View {
                     .foregroundColor(.secondary)
                     .opacity(pickerSelection == .all ? 1 : 0)
             }
+            let array: [SuffixModel] = pickerSelection == .all ? viewModel.orderedArray : viewModel.top10Array
             List {
-                let array: [SuffixModel] = pickerSelection == .all ? viewModel.orderedArray : viewModel.top10Array
                 if (!viewModel.isSearching) {
                     ForEach(array, id: \.self) { model in
                         HStack {

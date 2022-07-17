@@ -10,6 +10,8 @@ import SwiftUI
 import Combine
 
 class SuffixViewModel: ObservableObject {
+    @InjectedService private var historyService: HistoryService
+    
     @Published var searchSuffix: String = "" {
         didSet {
             isSearching = true
@@ -44,15 +46,8 @@ class SuffixViewModel: ObservableObject {
     
     func handle(text: String) {
         guard text != self.text else { return }
-        var models: [SuffixModel] = []
-        let suffixes = suffixes(text: text)
-        let suffixCounter = suffixConter(suffixes: suffixes)
-        suffixCounter.keys.forEach { suffix in
-            let model = SuffixModel(suffix: suffix, count: suffixCounter[suffix]!)
-            models.append(model)
-        }
-        models = models.filter { $0.count > 1 }
-        self.models = models
+        self.models = text.suffixies()
+        historyService.add(text)
         handleFilters(searchSuffix: searchSuffix, invertOrder: invertOrder)
     }
         
@@ -70,33 +65,5 @@ class SuffixViewModel: ObservableObject {
             orderedArray = orderedArray.filter { $0.suffix.range(of: searchSuffix.lowercased()) != nil }
             top10Array = top10Array.filter { $0.suffix.range(of: searchSuffix.lowercased()) != nil }
         }
-    }
-    
-    private func suffixes(text: String, minLen: UInt = 3) -> [String] {
-        guard text.count > 0 else { return [] }
-        var suffixes: [String] = []
-        let words = text.split { !$0.isLetter }
-        for word in words {
-            let sequence = SuffixSequence(string: String(word))
-            for suffix in sequence {
-                suffixes.append(String(suffix))
-            }
-        }
-        suffixes = suffixes.map { $0.lowercased() }
-        suffixes = suffixes.filter { $0.count >= minLen }
-        return suffixes
-    }
-    
-    private func suffixConter(suffixes: [String]) -> [String : Int] {
-        var suffixCounter: [String: Int] = [:]
-        for suffix in suffixes {
-            let counter = suffixCounter[suffix]
-            if counter == nil {
-                suffixCounter[suffix] = 1
-            } else {
-                suffixCounter[suffix]! += 1
-            }
-        }
-        return suffixCounter
     }
 }

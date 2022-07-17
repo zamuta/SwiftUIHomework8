@@ -17,6 +17,20 @@
 		4D3B011F285F195C00F8572A /* SuffixIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3B011E285F195C00F8572A /* SuffixIterator.swift */; };
 		4D3B0122285F543000F8572A /* Text+AttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3B0121285F543000F8572A /* Text+AttributedString.swift */; };
 		4D3B0125285F5B3000F8572A /* TextScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3B0124285F5B3000F8572A /* TextScreenView.swift */; };
+		4D6AD6602883E51C005ED689 /* JobProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6AD65F2883E51C005ED689 /* JobProtocol.swift */; };
+		4D6AD6622883E7BA005ED689 /* JobQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6AD6612883E7BA005ED689 /* JobQueue.swift */; };
+		4D6AD6642883E892005ED689 /* JobScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6AD6632883E892005ED689 /* JobScheduler.swift */; };
+		4D6AD6662883FAA6005ED689 /* String+SuffixModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6AD6652883FAA6005ED689 /* String+SuffixModel.swift */; };
+		4D6AD6682884159B005ED689 /* MeasureTimeJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6AD6672884159B005ED689 /* MeasureTimeJob.swift */; };
+		4D6AD66A288415BA005ED689 /* HandlerJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6AD669288415BA005ED689 /* HandlerJob.swift */; };
+		4D6AD66E28842FEB005ED689 /* HistoryScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6AD66D28842FEB005ED689 /* HistoryScreenView.swift */; };
+		4D6AD67328843380005ED689 /* HistoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6AD67228843380005ED689 /* HistoryService.swift */; };
+		4D6AD676288433FC005ED689 /* ServiceLocator+Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6AD675288433FC005ED689 /* ServiceLocator+Configurator.swift */; };
+		4D6AD6792884340E005ED689 /* InjectedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6AD6772884340E005ED689 /* InjectedService.swift */; };
+		4D6AD67A2884340E005ED689 /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6AD6782884340E005ED689 /* ServiceLocator.swift */; };
+		4D6AD67C2884377B005ED689 /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6AD67B2884377B005ED689 /* HistoryViewModel.swift */; };
+		4D6AD67F2884458B005ED689 /* HistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6AD67E2884458B005ED689 /* HistoryModel.swift */; };
+		4D6AD68228845A50005ED689 /* TextSamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6AD68128845A50005ED689 /* TextSamples.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,6 +58,20 @@
 		4D3B011E285F195C00F8572A /* SuffixIterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixIterator.swift; sourceTree = "<group>"; };
 		4D3B0121285F543000F8572A /* Text+AttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text+AttributedString.swift"; sourceTree = "<group>"; };
 		4D3B0124285F5B3000F8572A /* TextScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextScreenView.swift; sourceTree = "<group>"; };
+		4D6AD65F2883E51C005ED689 /* JobProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobProtocol.swift; sourceTree = "<group>"; };
+		4D6AD6612883E7BA005ED689 /* JobQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobQueue.swift; sourceTree = "<group>"; };
+		4D6AD6632883E892005ED689 /* JobScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobScheduler.swift; sourceTree = "<group>"; };
+		4D6AD6652883FAA6005ED689 /* String+SuffixModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+SuffixModel.swift"; sourceTree = "<group>"; };
+		4D6AD6672884159B005ED689 /* MeasureTimeJob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureTimeJob.swift; sourceTree = "<group>"; };
+		4D6AD669288415BA005ED689 /* HandlerJob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandlerJob.swift; sourceTree = "<group>"; };
+		4D6AD66D28842FEB005ED689 /* HistoryScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryScreenView.swift; sourceTree = "<group>"; };
+		4D6AD67228843380005ED689 /* HistoryService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryService.swift; sourceTree = "<group>"; };
+		4D6AD675288433FC005ED689 /* ServiceLocator+Configurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServiceLocator+Configurator.swift"; sourceTree = "<group>"; };
+		4D6AD6772884340E005ED689 /* InjectedService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InjectedService.swift; sourceTree = "<group>"; };
+		4D6AD6782884340E005ED689 /* ServiceLocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
+		4D6AD67B2884377B005ED689 /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
+		4D6AD67E2884458B005ED689 /* HistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryModel.swift; sourceTree = "<group>"; };
+		4D6AD68128845A50005ED689 /* TextSamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSamples.swift; sourceTree = "<group>"; };
 		4D7A7663286A39DD001AFAA7 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		4D7A7665286A39DD001AFAA7 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		4D869110286B5608004BC146 /* SwiftUIHomework5 (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SwiftUIHomework5 (iOS).entitlements"; sourceTree = "<group>"; };
@@ -73,7 +101,11 @@
 		4D3B00D5285F0D9300F8572A /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				4D6AD66B28842BE6005ED689 /* Services */,
 				4DF352A3286A23690066FB42 /* Screens */,
+				4D6AD66F28843000005ED689 /* ViewModels */,
+				4D6AD67D28844574005ED689 /* Models */,
+				4D6AD68028845A03005ED689 /* Other */,
 				4DF352A2286A235D0066FB42 /* Extensions */,
 				4D3B00D6285F0D9300F8572A /* SwiftUIHomework5App.swift */,
 				4D3B00D7285F0D9300F8572A /* ContentView.swift */,
@@ -90,6 +122,75 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		4D6AD65C2883D222005ED689 /* SuffixSequence */ = {
+			isa = PBXGroup;
+			children = (
+				4D3B011E285F195C00F8572A /* SuffixIterator.swift */,
+				4D3B0118285F13EE00F8572A /* SuffixModel.swift */,
+				4D3B011B285F194F00F8572A /* SuffixSequence.swift */,
+				4D6AD6652883FAA6005ED689 /* String+SuffixModel.swift */,
+			);
+			path = SuffixSequence;
+			sourceTree = "<group>";
+		};
+		4D6AD65D2883E4DC005ED689 /* JobSheduler */ = {
+			isa = PBXGroup;
+			children = (
+				4D6AD65F2883E51C005ED689 /* JobProtocol.swift */,
+				4D6AD6612883E7BA005ED689 /* JobQueue.swift */,
+				4D6AD6632883E892005ED689 /* JobScheduler.swift */,
+				4D6AD669288415BA005ED689 /* HandlerJob.swift */,
+				4D6AD6672884159B005ED689 /* MeasureTimeJob.swift */,
+			);
+			path = JobSheduler;
+			sourceTree = "<group>";
+		};
+		4D6AD66B28842BE6005ED689 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4D6AD674288433D9005ED689 /* ServiceLocator */,
+				4D6AD67228843380005ED689 /* HistoryService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4D6AD66F28843000005ED689 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4D3B0115285F138900F8572A /* SuffixViewModel.swift */,
+				4D6AD67B2884377B005ED689 /* HistoryViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4D6AD674288433D9005ED689 /* ServiceLocator */ = {
+			isa = PBXGroup;
+			children = (
+				4D6AD6772884340E005ED689 /* InjectedService.swift */,
+				4D6AD6782884340E005ED689 /* ServiceLocator.swift */,
+				4D6AD675288433FC005ED689 /* ServiceLocator+Configurator.swift */,
+			);
+			path = ServiceLocator;
+			sourceTree = "<group>";
+		};
+		4D6AD67D28844574005ED689 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4D6AD67E2884458B005ED689 /* HistoryModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4D6AD68028845A03005ED689 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				4D6AD65C2883D222005ED689 /* SuffixSequence */,
+				4D6AD65D2883E4DC005ED689 /* JobSheduler */,
+				4D6AD68128845A50005ED689 /* TextSamples.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
 		4D7A7662286A39DD001AFAA7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -97,26 +198,6 @@
 				4D7A7665286A39DD001AFAA7 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		4DF352A0286A231E0066FB42 /* SuffixScreen */ = {
-			isa = PBXGroup;
-			children = (
-				4D3B0112285F11BD00F8572A /* SuffixScreenView.swift */,
-				4D3B0115285F138900F8572A /* SuffixViewModel.swift */,
-				4D3B0118285F13EE00F8572A /* SuffixModel.swift */,
-				4D3B011E285F195C00F8572A /* SuffixIterator.swift */,
-				4D3B011B285F194F00F8572A /* SuffixSequence.swift */,
-			);
-			path = SuffixScreen;
-			sourceTree = "<group>";
-		};
-		4DF352A1286A232C0066FB42 /* TextScreen */ = {
-			isa = PBXGroup;
-			children = (
-				4D3B0124285F5B3000F8572A /* TextScreenView.swift */,
-			);
-			path = TextScreen;
 			sourceTree = "<group>";
 		};
 		4DF352A2286A235D0066FB42 /* Extensions */ = {
@@ -130,8 +211,9 @@
 		4DF352A3286A23690066FB42 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				4DF352A1286A232C0066FB42 /* TextScreen */,
-				4DF352A0286A231E0066FB42 /* SuffixScreen */,
+				4D3B0124285F5B3000F8572A /* TextScreenView.swift */,
+				4D3B0112285F11BD00F8572A /* SuffixScreenView.swift */,
+				4D6AD66D28842FEB005ED689 /* HistoryScreenView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -207,14 +289,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D3B011F285F195C00F8572A /* SuffixIterator.swift in Sources */,
+				4D6AD676288433FC005ED689 /* ServiceLocator+Configurator.swift in Sources */,
+				4D6AD6662883FAA6005ED689 /* String+SuffixModel.swift in Sources */,
 				4D3B0100285F0D9600F8572A /* ContentView.swift in Sources */,
+				4D6AD6792884340E005ED689 /* InjectedService.swift in Sources */,
+				4D6AD66A288415BA005ED689 /* HandlerJob.swift in Sources */,
 				4D3B011C285F194F00F8572A /* SuffixSequence.swift in Sources */,
 				4D3B0116285F138900F8572A /* SuffixViewModel.swift in Sources */,
 				4D3B0113285F11BD00F8572A /* SuffixScreenView.swift in Sources */,
+				4D6AD68228845A50005ED689 /* TextSamples.swift in Sources */,
 				4D3B0122285F543000F8572A /* Text+AttributedString.swift in Sources */,
+				4D6AD67328843380005ED689 /* HistoryService.swift in Sources */,
 				4D3B00FE285F0D9600F8572A /* SwiftUIHomework5App.swift in Sources */,
+				4D6AD6642883E892005ED689 /* JobScheduler.swift in Sources */,
+				4D6AD67C2884377B005ED689 /* HistoryViewModel.swift in Sources */,
 				4D3B0125285F5B3000F8572A /* TextScreenView.swift in Sources */,
 				4D3B0119285F13EF00F8572A /* SuffixModel.swift in Sources */,
+				4D6AD67F2884458B005ED689 /* HistoryModel.swift in Sources */,
+				4D6AD6682884159B005ED689 /* MeasureTimeJob.swift in Sources */,
+				4D6AD67A2884340E005ED689 /* ServiceLocator.swift in Sources */,
+				4D6AD6622883E7BA005ED689 /* JobQueue.swift in Sources */,
+				4D6AD6602883E51C005ED689 /* JobProtocol.swift in Sources */,
+				4D6AD66E28842FEB005ED689 /* HistoryScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
